@@ -1,0 +1,14 @@
+.header .header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__nav ul {
+  display: flex;
+  list-style: none;
+  /* gap: 2rem; */
+}
+.header .header__nav ul li {
+  padding: 2rem 0;
+  background: blue;
+}
