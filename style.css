@@ -131,10 +131,18 @@ img {
 .header .header__nav ul {
   display: flex;
   list-style: none;
+  gap: 2rem;
 }
 .header .header__nav ul li {
   padding: 2rem 0;
 }
+.header .header__nav ul li:hover a {
+  color: #ffa700;
+}
+.header .branding img {
+  width: 10rem;
+}
+
 .header .branding h4 {
   color: #ffffff;
 }
@@ -149,6 +157,12 @@ img {
   height: 0.2rem;
   background-color: #ffffff;
   display: block;
+}
+
+.header .header__nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 
 /*responsive for small screen desktops*/
@@ -168,7 +182,7 @@ img {
 /*responsive for mobile*/
 @media screen and (max-width: 480px) {
   .header {
-    background: #ffa700;
+    background: #2b2b2b;
   }
   .header .header__nav {
     background: #2b2b2b;
@@ -207,4 +221,27 @@ img {
     flex-direction: column;
     gap: 0.3rem;
   }
+}
+
+/*BANNER*/
+.banner {
+  background: red;
+  padding: 5rem 0;
+}
+.banner .banner__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+}
+.banner .banner__wrapper img {
+  width: 100%;
+}
+
+/*-----------REPEATABLE PATTERNS--------------*/
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 1.5rem 2rem;
+  border-radius: 5rem;
+  text-align: center;
 }
