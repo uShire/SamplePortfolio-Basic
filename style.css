@@ -137,7 +137,7 @@ img {
   padding: 2rem 0;
 }
 .header .header__nav ul li:hover a {
-  color: #ffa700;
+  color: red;
 }
 .header .branding img {
   width: 10rem;
@@ -214,7 +214,7 @@ img {
     background: lightgray;
   }
   .header .header__nav ul li:hover a {
-    color: #ffa700;
+    color: red;
   }
   .header .burger__btn {
     display: flex;
@@ -225,7 +225,7 @@ img {
 
 /*BANNER*/
 .banner {
-  background: red;
+  background: #ffffff;
   padding: 5rem 0;
 }
 .banner .banner__wrapper {
@@ -236,6 +236,99 @@ img {
 .banner .banner__wrapper img {
   width: 100%;
 }
+.banner h1 {
+  font-size: 7rem;
+  color: red;
+  font-weight: 600;
+}
+.banner h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+.banner p {
+  text-align: justify;
+}
+.banner a {
+  width: 200px;
+}
+@media screen and (max-width: 480px) {
+  .banner .banner__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+  .banner img {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+}
+/*SERVICES*/
+.services {
+  padding: 5rem 0;
+}
+.services .services__item img {
+  width: 10rem;
+}
+.services .services__item h4 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.services .services__item p {
+  color: #ffffff;
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+.services .services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8rem;
+}
+.services .services__item {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .services .services__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+  }
+  .services .services__item:not(first-child),
+  .services .services__item:not(last-child) {
+    margin: 5rem 0;
+  }
+}
+/*PREVIOUS PROJECTS*/
+.projects {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+.projects h2 {
+  color: red;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.projects .projects__wrapper {
+  margin-top: 8rem;
+}
+.projects .projects__item h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.projects .projects__item p {
+  margin: 3rem 0;
+  text-align: justify;
+}
+/* .projects .projects__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+} */
 
 /*-----------REPEATABLE PATTERNS--------------*/
 .btn {
@@ -244,4 +337,29 @@ img {
   padding: 1.5rem 2rem;
   border-radius: 5rem;
   text-align: center;
+  background: transparent;
+}
+.btn.bg--red {
+  background: red;
+  color: #ffffff;
+}
+.btn.bg--red:hover {
+  background: #2b2b2b;
+}
+.btn.bg--transparent {
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+}
+.btn.bg--transparent:hover {
+  background: #2b2b2b;
+  color: #ffffff;
+}
+.mt--3 {
+  margin-top: 3rem;
+}
+.text--center {
+  text-align: center;
+}
+.bg--dark {
+  background: #2b2b2b;
 }
